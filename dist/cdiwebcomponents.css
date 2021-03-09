@@ -1,0 +1,96 @@
+/**
+* Color Scheme
+*/
+:root {
+  /*default colors*/
+  --x-text-color: #202020;
+  --x-background-odd: ecf0f1;
+  --x-background-even: #fff;
+  --x-primary: #3498db;
+  --x-primary-hover: #2980b9;
+  --x-success: #2ecc71;
+  --x-success-hover: #27ae60;
+  --x-warning: #f1c40f;
+  --x-warning-hover: #f39c12;
+  --x-error: #e74c3c;
+  --x-error-hover: #c0392b;
+  --x-info: #17a2b8;
+  --x-info-hover: #138496;
+  --x-light-silver: #ecf0f1;
+  --x-dark-silver: #d1d2da;
+  --x-middle-silver: #5f98b3;
+  /*header actions*/
+  --x-header-background: orange;
+  --x-header-text-color: #333;
+  /*side-nav actions*/
+  --x-sidenav-background: #333646;
+  --x-sidenav-text-color: #bdc3c7;
+  --x-sidenav-hover: #3498db;
+  /*x-input/fieldset/labels*/
+  --x-label-color: #5f98b3;
+  /*x-datagrid zebra*/
+  --x-datagrid-even:#fff;
+  --x-datagrid-odd:#ecf0f1;
+}
+
+
+/**
+* Html defaults
+*/
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+html, body {
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  color: var(--x-text-color);
+  overflow: hidden;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  font-family: 'Helvetica Neue', 'Helvetica', 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, Tahoma, Geneva, sans-serif;
+}
+
+.primary {
+  color: var(--x-primary);
+}
+
+/* Medium screens breakpoint (1050px) */
+@media only screen and (min-width: 65.625em) {
+  /* Break out main cards into two columns */
+  .main-cards {
+    column-count: 2;
+  }
+}
+
+/**
+* Scrollbar
+*/
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #ccc;
+    border-radius: 2px;
+}
+
+/**
+* Placeholder
+*/
+::placeholder {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: lighter;
+    color: silver;
+}
